@@ -132,11 +132,11 @@ debug: $(BUILD) debug-package
 
 debug-package:
 	# Move files to a debug staging directory instead of the release directory
-	mkdir -p $(BUILD)/debug/VanzaKartChannel
-	mkdir -p $(BUILD)/debug/apps/VanzaKart
-	cp runtime-ext/runtime-ext-* $(BUILD)/debug/VanzaKartChannel
-	cp $(OUTPUT).dol $(BUILD)/debug/apps/VanzaKart/boot.dol
-	cp assets/hbc/icon.png assets/hbc/meta.xml $(BUILD)/debug/apps/VanzaKart/
+	mkdir -p $(BUILD)/debug/SillyKartWiiChannel
+	mkdir -p $(BUILD)/debug/apps/SillyKartWii
+	cp runtime-ext/runtime-ext-* $(BUILD)/debug/SillyKartWiiChannel
+	cp $(OUTPUT).dol $(BUILD)/debug/apps/SillyKartWii/boot.dol
+	cp assets/hbc/icon.png assets/hbc/meta.xml $(BUILD)/debug/apps/SillyKartWii/
 
 beta: EXTRA_CFLAGS := -DRRC_BETA=1
 beta: export EXTRA_CFLAGS := -DRRC_BETA=1
@@ -144,11 +144,11 @@ beta: $(BUILD) beta-package
 
 beta-package:
 	# Move files to a beta staging directory instead of the release directory
-	mkdir -p $(BUILD)/beta/VanzaKartChannelBeta
-	mkdir -p $(BUILD)/beta/apps/VanzaKartBeta
-	cp runtime-ext/runtime-ext-* $(BUILD)/beta/VanzaKartChannelBeta
-	cp $(OUTPUT).dol $(BUILD)/beta/apps/VanzaKartBeta/boot.dol
-	cp assets/hbc/icon.png assets/hbc/meta.xml $(BUILD)/beta/apps/VanzaKartBeta/
+	mkdir -p $(BUILD)/beta/SillyKartWiiChannelBeta
+	mkdir -p $(BUILD)/beta/apps/SillyKartWiiBeta
+	cp runtime-ext/runtime-ext-* $(BUILD)/beta/SillyKartWiiChannelBeta
+	cp $(OUTPUT).dol $(BUILD)/beta/apps/SillyKartWiiBeta/boot.dol
+	cp assets/hbc/icon.png assets/hbc/meta.xml $(BUILD)/beta/apps/SillyKartWiiBeta/
 
 clean:
 	@echo clean ...
@@ -160,11 +160,11 @@ run:
 
 release: $(BUILD)
 	# Move files to correct places
-	mkdir -p $(RELEASE)/VanzaKartChannel
-	mkdir -p $(RELEASE)/apps/VanzaKart
-	cp runtime-ext/runtime-ext-* $(RELEASE)/VanzaKartChannel 
-	cp $(OUTPUT).dol $(RELEASE)/apps/VanzaKart/boot.dol
-	cp assets/hbc/icon.png assets/hbc/meta.xml $(RELEASE)/apps/VanzaKart/
+	mkdir -p $(RELEASE)/SillyKartWiiChannel
+	mkdir -p $(RELEASE)/apps/SillyKartWii
+	cp runtime-ext/runtime-ext-* $(RELEASE)/SillyKartWiiChannel 
+	cp $(OUTPUT).dol $(RELEASE)/apps/SillyKartWii/boot.dol
+	cp assets/hbc/icon.png assets/hbc/meta.xml $(RELEASE)/apps/SillyKartWii/
 	cp assets/THIRD_PARTY_NOTICES.txt $(RELEASE)/THIRD_PARTY_NOTICES.txt
 
 #---------------------------------------------------------------------------------
