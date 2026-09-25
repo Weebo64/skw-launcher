@@ -43,7 +43,7 @@ int rrc_versionsfile_split_by(char *in, char by, char ***out, int *amt);
 void rrc_versionsfile_free_split(char **array, int count);
 
 /*
-    Get version information from the VanzaKart server.
+    Get version information from Weebo64's server.
     On success, return code is 0 and `result' is populated with a NULL-terminated string.
     On failure, return code is negative CURL return code and `result' is NULL.
 */
