@@ -21,11 +21,11 @@
 #define RRC_DIR_H
 
 #if defined(RRC_BETA) && RRC_BETA >= 1
-#   define RRC_RETRO_REWIND_BASE_DIR "VKBeta"
-#   define RRC_RETRO_REWIND_CHANNEL_DIR "VanzaKartChannelBeta"
+#   define RRC_RETRO_REWIND_BASE_DIR "SKWiiBeta"
+#   define RRC_RETRO_REWIND_CHANNEL_DIR "SillyKartWiiChannelBeta"
 #else
-#   define RRC_RETRO_REWIND_BASE_DIR "VanzaKart"
-#   define RRC_RETRO_REWIND_CHANNEL_DIR "VanzaKartChannel"
+#   define RRC_RETRO_REWIND_BASE_DIR "SillyKartWii"
+#   define RRC_RETRO_REWIND_CHANNEL_DIR "SillyKartWiiChannel"
 #endif
 
 #endif
