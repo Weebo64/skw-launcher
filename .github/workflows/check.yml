@@ -41,5 +41,5 @@ jobs:
       - name: Upload channel files
         uses: actions/upload-artifact@v4
         with:
-          name: vanzakart-launcher
+          name: SillyKartWii-launcher
           path: build/release
