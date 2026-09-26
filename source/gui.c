@@ -218,6 +218,7 @@ void rrc_gui_video_fix(char region)
         break;
     case 'E':
     case 'J':
+    case 'K':   
         r_rmode_reg = VI_NTSC;
         r_rmode = progressive ? &TVNtsc480Prog : &TVNtsc480IntDf;
     }
